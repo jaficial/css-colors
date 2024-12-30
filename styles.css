@@ -1,3 +1,52 @@
-p {
+h1 {
     text-align: center;
+}
+
+.marker {
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 50%);
+}
+
+.container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.sleeve, .container {
+    display: inlnie-block;
+}
+
+/*
+    - linear-gradient(deg, color1 %, color2 %, etc.. %): linear-gradient takes in
+    the degree (direction) of the gradient, color (rgb, hsl, hex), and the color-stop (%)
+    which is like a scaler for how much percentage of the color that you'd like to use.
+    - the default percent values for the linear-gradient function is: 
+    linear-gradient(180deg, color1 0%, color2 50%, color3 100%), so you can just do:
+    linear-gradient(color1, color2, color3)
+*/
+.red {
+    background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%);
+}
+
+.green {
+    background: linear-gradient(#55680D, #71F53E, #116c31);
+}
+
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
 }
